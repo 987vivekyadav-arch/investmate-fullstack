@@ -1,0 +1,444 @@
+.date-page{
+    min-height:100vh;
+
+    box-sizing:border-box;
+
+    padding:30px 20px;
+
+    background:
+    radial-gradient(
+        circle at top right,
+        rgba(255,0,128,0.10),
+        transparent 35%
+    ),
+    #050507;
+
+    color:#ffffff;
+}
+
+
+.date-container{
+    width:100%;
+
+    max-width:700px;
+
+    margin:0 auto;
+}
+
+
+/* HEADER */
+
+.date-header{
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    margin-bottom:25px;
+}
+
+
+.date-back-button{
+    width:45px;
+    height:45px;
+
+    flex-shrink:0;
+
+    border:1px solid #30303a;
+
+    border-radius:12px;
+
+    background:#111116;
+
+    color:#ffffff;
+
+    font-size:23px;
+
+    cursor:pointer;
+
+    transition:0.2s;
+}
+
+
+.date-back-button:hover{
+    border-color:#ff0080;
+
+    color:#ff0080;
+}
+
+
+.date-title{
+    margin:0;
+
+    font-size:28px;
+
+    font-weight:700;
+    color: rgb(223, 23, 106);
+}
+
+
+.date-subtitle{
+    margin:5px 0 0;
+
+    color:#858590;
+
+    font-size:14px;
+}
+
+
+/* MONTH SELECTOR */
+
+.date-selector-card{
+    padding:18px;
+
+    margin-bottom:18px;
+
+    background:#0d0d12;
+
+    border:1px solid #25252e;
+
+    border-radius:16px;
+}
+
+
+.date-label{
+    display:block;
+
+    margin-bottom:9px;
+
+    color:#aaaaB3;
+
+    font-size:13px;
+
+    font-weight:500;
+}
+
+
+.date-input{
+    width:100%;
+
+    height:48px;
+
+    box-sizing:border-box;
+
+    padding:0 13px;
+
+    border:1px solid #30303a;
+
+    border-radius:11px;
+
+    outline:none;
+
+    background:#13131a;
+
+    color:#ffffff;
+
+    font-size:15px;
+
+    color-scheme:dark;
+
+    cursor:pointer;
+}
+
+
+.date-input:focus{
+    border-color:#ff0080;
+
+    box-shadow:
+    0 0 0 2px rgba(255,0,128,0.10);
+}
+
+
+/* RECORDS */
+
+.date-records{
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+}
+
+
+.date-record-card{
+    padding:19px;
+
+    background:#0d0d12;
+
+    border:1px solid #25252e;
+
+    border-radius:17px;
+
+    transition:0.2s;
+}
+
+
+.date-record-card:hover{
+    border-color:#3b3b46;
+}
+
+
+/* RECORD HEADER */
+
+.date-record-header{
+    padding-bottom:15px;
+
+    border-bottom:1px solid #25252e;
+}
+
+
+.date-record-header h2{
+    margin:0;
+
+    font-size:18px;
+
+    font-weight:600;
+    color: rgb(252, 30, 133);
+}
+
+
+.date-chart-button{
+    width:50%;
+    margin-top:15px;
+    padding:13px 16px;
+
+    border:1px solid #ff0080;
+    border-radius:12px;
+
+    background:#ff0080;
+    color:#ffffff;
+
+    font-size:14px;
+    font-weight:600;
+
+    cursor:pointer;
+    transition:0.2s;
+}
+
+.date-chart-button:hover{
+    background:#d9006d;
+    border-color:#d9006d;
+}
+
+.date-chart-button:active{
+    transform:scale(0.98);
+}
+
+
+
+
+.date-record-header p{
+    margin:5px 0 0;
+
+    color:#777782;
+
+    font-size:12px;
+}
+
+
+/* VALUES */
+
+.date-record-values{
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:10px;
+
+    margin-top:15px;
+}
+
+
+.date-value-box{
+    padding:13px;
+
+    background:#13131a;
+
+    border:1px solid #25252e;
+
+    border-radius:11px;
+}
+
+
+.date-value-box span{
+    display:block;
+
+    margin-bottom:7px;
+
+    color:#777782;
+
+    font-size:12px;
+}
+
+
+.date-value-box strong{
+    color:#eeeeF2;
+
+    font-size:15px;
+
+    font-weight:600;
+}
+
+
+/* NOTES */
+
+.date-notes{
+    margin-top:13px;
+
+    padding:13px;
+
+    background:#121219;
+
+    border:1px solid #25252e;
+
+    border-radius:11px;
+}
+
+
+.date-notes span{
+    color:#858590;
+
+    font-size:12px;
+}
+
+
+.date-notes p{
+    margin:6px 0 0;
+
+    color:#d4d4dc;
+
+    font-size:14px;
+
+    line-height:1.5;
+}
+
+
+/* EMPTY */
+
+.date-empty{
+    margin-top:18px;
+
+    padding:35px 20px;
+
+    text-align:center;
+
+    background:#0d0d12;
+
+    border:1px solid #25252e;
+
+    border-radius:16px;
+}
+
+
+.date-empty-icon{
+    color:#ff0080;
+
+    font-size:32px;
+
+    margin-bottom:10px;
+}
+
+
+.date-empty h2{
+    margin:0;
+
+    font-size:18px;
+}
+
+
+.date-empty p{
+    margin:7px 0 0;
+
+    color:#777782;
+
+    font-size:13px;
+}
+
+
+/* TABLET */
+
+@media(max-width:700px){
+
+    .date-page{
+        padding:25px 15px;
+    }
+
+
+    .date-title{
+        font-size:25px;
+    }
+
+
+    .date-record-card{
+        padding:17px;
+    }
+
+}
+
+
+/* MOBILE */
+
+@media(max-width:500px){
+
+    .date-page{
+        padding:18px 12px;
+    }
+
+
+    .date-header{
+        gap:11px;
+
+        margin-bottom:20px;
+    }
+
+
+    .date-back-button{
+        width:42px;
+        height:42px;
+
+        font-size:21px;
+    }
+
+
+    .date-title{
+        font-size:22px;
+    }
+
+
+    .date-subtitle{
+        font-size:12px;
+    }
+
+
+    .date-selector-card{
+        padding:15px;
+    }
+
+
+    .date-record-card{
+        padding:15px;
+
+        border-radius:15px;
+    }
+
+
+    .date-record-values{
+        grid-template-columns:1fr;
+
+        gap:9px;
+    }
+
+
+    .date-value-box{
+        padding:12px;
+    }
+
+.date-chart-button{
+        padding:12px 14px;
+        font-size:13px;
+    }
+    
+
+
+}

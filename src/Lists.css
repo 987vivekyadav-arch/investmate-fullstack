@@ -1,0 +1,1045 @@
+/* =========================================
+   PAGE
+========================================= */
+
+.lists-page{
+
+    min-height:100vh;
+
+    padding:30px 20px;
+
+    box-sizing:border-box;
+
+    background:
+    radial-gradient(
+        circle at top right,
+        rgba(255,0,128,0.10),
+        transparent 35%
+    ),
+    #050507;
+
+    color:#ffffff;
+}
+
+
+.lists-container{
+
+    width:100%;
+
+    max-width:1100px;
+
+    margin:0 auto;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.lists-header{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    margin-bottom:28px;
+
+}
+
+
+.lists-back-button{
+
+    width:42px;
+
+    height:42px;
+
+    border:1px solid #30303a;
+
+    border-radius:11px;
+
+    background:#101016;
+
+    color:#ffffff;
+
+    font-size:22px;
+
+    cursor:pointer;
+
+    transition:0.2s;
+
+}
+
+
+.lists-back-button:hover{
+
+    border-color:#ff1493;
+
+    color:#ff1493;
+
+}
+
+
+.lists-title{
+
+    margin:0;
+
+    font-size:30px;
+
+    font-weight:700;
+
+    color:#ff1493;
+
+}
+
+
+.lists-subtitle{
+
+    margin:5px 0 0;
+
+    color:#858592;
+
+    font-size:13px;
+
+}
+
+
+/* =========================================
+   RECORD LIST
+========================================= */
+
+.lists-records{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+
+/* =========================================
+   RECORD CARD
+========================================= */
+
+.list-card{
+
+    padding:22px;
+
+    background:#0d0d13;
+
+    border:1px solid #292932;
+
+    border-radius:18px;
+
+    box-sizing:border-box;
+
+    transition:0.2s;
+
+}
+
+
+.list-card:hover{
+
+    border-color:#41414c;
+
+}
+
+
+/* =========================================
+   CARD HEADER
+========================================= */
+
+.list-card-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:flex-start;
+
+    gap:20px;
+
+    padding-bottom:18px;
+
+    border-bottom:1px solid #24242d;
+
+}
+
+
+.list-month{
+
+    margin:0;
+
+    font-size:20px;
+
+    color:#ffffff;
+
+}
+
+
+.list-name{
+
+    margin:6px 0 0;
+
+    color:#ff1493;
+
+    font-size:14px;
+
+    font-weight:600;
+
+}
+
+
+.list-profit{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:flex-end;
+
+    gap:4px;
+
+}
+
+
+.list-profit strong{
+
+    font-size:18px;
+
+}
+
+
+.list-profit span{
+
+    font-size:12px;
+
+}
+
+
+.positive{
+
+    color:#00e89a;
+
+}
+
+
+.negative{
+
+    color:#ff3d81;
+
+}
+
+
+/* =========================================
+   VALUE BOXES
+========================================= */
+
+.list-values{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(3,1fr);
+
+    gap:12px;
+
+    margin-top:18px;
+
+}
+
+
+.list-value-box{
+
+    padding:15px;
+
+    background:#111118;
+
+    border:1px solid #292932;
+
+    border-radius:12px;
+
+    text-align:center;
+
+}
+
+
+.list-value-box p{
+
+    margin:0 0 8px;
+
+    color:#777782;
+
+    font-size:11px;
+
+}
+
+
+.list-value-box strong{
+
+    font-size:15px;
+
+    color:#ffffff;
+
+}
+
+
+.current-value{
+
+    border-color:#00bfe8;
+
+}
+
+
+/* =========================================
+   PROFIT RESULT
+========================================= */
+
+.list-result{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-top:15px;
+
+    padding:15px 18px;
+
+    border-radius:12px;
+
+}
+
+
+.positive-result{
+
+    background:rgba(0,232,154,0.07);
+
+    border:1px solid rgba(0,232,154,0.30);
+
+}
+
+
+.negative-result{
+
+    background:rgba(255,61,129,0.07);
+
+    border:1px solid rgba(255,61,129,0.30);
+
+}
+
+
+.list-result div{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:5px;
+
+}
+
+
+.list-result span{
+
+    color:#858592;
+
+    font-size:11px;
+
+}
+
+
+.list-result strong{
+
+    font-size:15px;
+
+}
+
+
+/* =========================================
+   NOTES
+========================================= */
+
+.list-notes{
+
+    margin-top:15px;
+
+    padding:14px 16px;
+
+    background:#111118;
+
+    border:1px solid #292932;
+
+    border-radius:12px;
+
+}
+
+
+.list-notes span{
+
+    display:block;
+
+    margin-bottom:6px;
+
+    color:#777782;
+
+    font-size:11px;
+
+}
+
+
+.list-notes p{
+
+    margin:0;
+
+    color:#dddddf;
+
+    font-size:13px;
+
+    line-height:1.5;
+
+}
+
+
+/* =========================================
+   ACTION BUTTONS
+========================================= */
+
+.list-actions{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:12px;
+
+    margin-top:16px;
+
+}
+
+
+.list-delete-button,
+.list-edit-button{
+
+    padding:12px;
+
+    border-radius:11px;
+
+    font-size:13px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:0.2s;
+
+}
+
+
+/* DELETE */
+
+.list-delete-button{
+
+    background:rgba(255,61,129,0.08);
+
+    border:1px solid rgba(255,61,129,0.45);
+
+    color:#ff4c8a;
+
+}
+
+
+.list-delete-button:hover{
+
+    background:#ff3d81;
+
+    color:#ffffff;
+
+}
+
+
+/* EDIT */
+
+.list-edit-button{
+
+    background:rgba(0,212,255,0.08);
+
+    border:1px solid rgba(0,212,255,0.45);
+
+    color:#00d4ff;
+
+}
+
+
+.list-edit-button:hover{
+
+    background:#00bfe8;
+
+    color:#ffffff;
+
+}
+
+
+/* =========================================
+   ADD BUTTON
+========================================= */
+
+.lists-add-button{
+
+    width:50%;
+
+    margin-top:20px;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#ff1493;
+
+    color:#ffffff;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:0.2s;
+
+}
+
+
+.lists-add-button:hover{
+
+    background:#ff2aa1;
+
+    transform:translateY(-1px);
+
+}
+
+
+/* =========================================
+   EDIT FORM CARD
+========================================= */
+
+.edit-form-card{
+
+    width:100%;
+
+    max-width:760px;
+
+    margin:20px auto;
+
+    padding:30px;
+
+    box-sizing:border-box;
+
+    background:#0d0d13;
+
+    border:1px solid #343440;
+
+    border-radius:20px;
+
+    box-shadow:
+    0 20px 50px rgba(0,0,0,0.35);
+
+}
+
+
+/* =========================================
+   EDIT TITLE
+========================================= */
+
+.edit-form-title{
+
+    margin:0;
+
+    text-align:center;
+
+    color:#ffffff;
+
+    font-size:25px;
+
+}
+
+
+.edit-form-subtitle{
+
+    margin:6px 0 28px;
+
+    text-align:center;
+
+    color:#ff1493;
+
+    font-size:14px;
+
+    font-weight:600;
+
+}
+
+
+/* =========================================
+   EDIT FIELDS
+========================================= */
+
+.edit-form{
+
+    width:100%;
+
+}
+
+
+.edit-field{
+
+    display:grid;
+
+    grid-template-columns:170px 1fr;
+
+    align-items:center;
+
+    gap:15px;
+
+    margin-bottom:15px;
+
+}
+
+
+.edit-field label{
+
+    color:#dddddf;
+
+    font-size:13px;
+
+    font-weight:600;
+
+    text-align:right;
+
+}
+
+
+.edit-field input,
+.edit-field textarea{
+
+    width:100%;
+
+    box-sizing:border-box;
+
+    padding:12px 13px;
+
+    background:#15151d;
+
+    border:1px solid #353541;
+
+    border-radius:10px;
+
+    color:#ffffff;
+
+    outline:none;
+
+    font-family:inherit;
+
+    font-size:13px;
+
+    transition:0.2s;
+
+}
+
+
+.edit-field input:focus,
+.edit-field textarea:focus{
+
+    border-color:#ff1493;
+
+    box-shadow:
+    0 0 0 2px rgba(255,20,147,0.10);
+
+}
+
+
+.edit-field textarea{
+
+    min-height:90px;
+
+    resize:vertical;
+
+}
+
+
+/* NOTES */
+
+.edit-notes{
+
+    align-items:start;
+
+}
+
+
+.edit-notes label{
+
+    padding-top:12px;
+
+}
+
+
+/* =========================================
+   EDIT BUTTONS
+========================================= */
+
+.edit-form-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:12px;
+
+    margin-top:25px;
+
+}
+
+
+.edit-cancel-button,
+.edit-save-button{
+
+    min-width:145px;
+
+    padding:12px 20px;
+
+    border-radius:11px;
+
+    font-size:13px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:0.2s;
+
+}
+
+
+/* CANCEL */
+
+.edit-cancel-button{
+
+    background:#15151d;
+
+    border:1px solid #41414c;
+
+    color:#dddddf;
+
+}
+
+
+.edit-cancel-button:hover{
+
+    border-color:#ffffff;
+
+    color:#ffffff;
+
+}
+
+
+/* SAVE */
+
+.edit-save-button{
+
+    background:#ff1493;
+
+    border:1px solid #ff1493;
+
+    color:#ffffff;
+
+    box-shadow:
+    0 5px 18px rgba(255,20,147,0.18);
+
+}
+
+
+.edit-save-button:hover{
+
+    background:#ff2aa1;
+
+    box-shadow:
+    0 7px 22px rgba(255,20,147,0.28);
+
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media(max-width:750px){
+
+    .lists-page{
+
+        padding:22px 15px;
+
+    }
+
+
+    .list-values{
+
+        grid-template-columns:
+        repeat(2,1fr);
+
+    }
+
+
+    .edit-form-card{
+
+        padding:25px 20px;
+
+    }
+
+
+    .edit-field{
+
+        grid-template-columns:
+        140px 1fr;
+
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media(max-width:550px){
+
+    .lists-page{
+
+        padding:17px 11px;
+
+    }
+
+
+    .lists-header{
+
+        gap:10px;
+
+        margin-bottom:20px;
+
+    }
+
+
+    .lists-back-button{
+
+        width:38px;
+
+        height:38px;
+
+        font-size:20px;
+
+    }
+
+
+    .lists-title{
+
+        font-size:23px;
+
+    }
+
+
+    .lists-subtitle{
+
+        font-size:11px;
+
+    }
+
+
+    .list-card{
+
+        padding:15px;
+
+        border-radius:15px;
+
+    }
+
+
+    .list-card-header{
+
+        gap:10px;
+
+    }
+
+
+    .list-month{
+
+        font-size:16px;
+
+    }
+
+
+    .list-name{
+
+        font-size:12px;
+
+    }
+
+
+    .list-profit strong{
+
+        font-size:14px;
+
+    }
+
+
+    .list-profit span{
+
+        font-size:10px;
+
+    }
+
+
+    .list-values{
+
+        grid-template-columns:
+        repeat(2,1fr);
+
+        gap:8px;
+
+    }
+
+
+    .list-value-box{
+
+        padding:12px 8px;
+
+    }
+
+
+    .list-value-box p{
+
+        font-size:10px;
+
+    }
+
+
+    .list-value-box strong{
+
+        font-size:13px;
+
+    }
+
+
+    .list-result{
+
+        padding:12px;
+
+    }
+
+
+    .list-actions{
+
+        gap:8px;
+
+    }
+
+
+    .list-delete-button,
+    .list-edit-button{
+
+        padding:11px;
+
+    }
+
+
+    /* EDIT FORM */
+
+    .edit-form-card{
+
+        margin:10px auto;
+
+        padding:20px 15px;
+
+        border-radius:16px;
+
+    }
+
+
+    .edit-form-title{
+
+        font-size:21px;
+
+    }
+
+
+    .edit-form-subtitle{
+
+        margin-bottom:20px;
+
+        font-size:13px;
+
+    }
+
+
+    .edit-field{
+
+        display:flex;
+
+        flex-direction:column;
+
+        align-items:stretch;
+
+        gap:6px;
+
+        margin-bottom:13px;
+
+    }
+
+
+    .edit-field label{
+
+        text-align:left;
+
+        font-size:12px;
+
+    }
+
+
+    .edit-field input,
+    .edit-field textarea{
+
+        padding:11px;
+
+        font-size:13px;
+
+    }
+
+
+    .edit-notes label{
+
+        padding-top:0;
+
+    }
+
+
+    .edit-form-buttons{
+
+        flex-direction:column;
+
+        gap:9px;
+
+        margin-top:20px;
+
+    }
+
+
+    .edit-cancel-button,
+    .edit-save-button{
+
+        width:100%;
+
+    }
+
+}

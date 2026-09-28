@@ -1,0 +1,402 @@
+.home-page{
+    min-height:100vh;
+    background:
+        radial-gradient(circle at 75% 45%, rgba(255,35,125,.12), transparent 30%),
+        #050507;
+    color:white;
+    overflow:hidden;
+    box-sizing:border-box;
+}
+
+
+/* NAVBAR */
+
+.home-navbar{
+    width:100%;
+    max-width:1200px;
+    margin:auto;
+    padding:25px 35px;
+    box-sizing:border-box;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.home-logo{
+    margin:0;
+    font-size:25px;
+    font-weight:700;
+    letter-spacing:-1px;
+    color: white;
+}
+
+.home-logo span{
+    color:#ff2b82;
+}
+
+.home-nav-links{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.home-login-link,
+.home-signup-link{
+    border:none;
+    cursor:pointer;
+    font-size:14px;
+}
+
+.home-login-link{
+    background:transparent;
+    color:#ddd;
+    padding:10px 16px;
+}
+
+.home-signup-link{
+    background:#ff2b82;
+    color:white;
+    padding:10px 18px;
+    border-radius:8px;
+}
+
+
+/* MAIN */
+
+.home-content{
+    width:100%;
+    max-width:1200px;
+    min-height:calc(100vh - 120px);
+    margin:auto;
+    padding:40px 35px 70px;
+    box-sizing:border-box;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:60px;
+}
+
+.home-text{
+    width:50%;
+    max-width:560px;
+}
+
+.home-label{
+    color:#ff2b82;
+    font-size:13px;
+    font-weight:600;
+    letter-spacing:3px;
+    margin:0 0 20px;
+}
+
+.home-title{
+    margin:0;
+    font-size:58px;
+    line-height:1.05;
+    letter-spacing:-2px;
+    color: white;
+}
+
+.home-description{
+    max-width:500px;
+    margin:25px 0 30px;
+
+    color:#999;
+    font-size:17px;
+    line-height:1.7;
+}
+
+.home-buttons{
+    display:flex;
+    gap:12px;
+}
+
+.home-primary-button,
+.home-secondary-button{
+    padding:14px 25px;
+    border-radius:9px;
+    font-size:15px;
+    cursor:pointer;
+}
+
+.home-primary-button{
+    border:1px solid #ff2b82;
+    background:#ff2b82;
+    color:white;
+}
+
+.home-secondary-button{
+    border:1px solid #333;
+    background:#111;
+    color:white;
+}
+
+
+/* VISUAL */
+
+.home-visual{
+    width:45%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.home-chart-card{
+    width:390px;
+    height:300px;
+
+    padding:25px;
+    box-sizing:border-box;
+
+    background:linear-gradient(
+        145deg,
+        #15151b,
+        #09090d
+    );
+
+    border:1px solid #292934;
+    border-radius:22px;
+
+    box-shadow:
+        0 30px 80px rgba(0,0,0,.6),
+        0 0 60px rgba(255,43,130,.08);
+
+    transform:rotate(2deg);
+}
+
+.home-chart-top{
+    display:flex;
+    justify-content:space-between;
+
+    color:#ddd;
+    font-size:14px;
+    margin-bottom:30px;
+}
+
+.home-chart-top span:last-child{
+    color:#777;
+}
+
+
+/* SIMPLE DECORATIVE CHART */
+
+.home-chart{
+    height:150px;
+    position:relative;
+
+    border-left:1px solid #25252d;
+    border-bottom:1px solid #25252d;
+
+    background:
+        linear-gradient(#181820 1px,transparent 1px),
+        linear-gradient(90deg,#181820 1px,transparent 1px);
+
+    background-size:50px 37px;
+}
+
+.chart-line{
+    position:absolute;
+    height:3px;
+    background:#ff2b82;
+    border-radius:10px;
+    transform-origin:left center;
+
+    box-shadow:0 0 12px rgba(255,43,130,.7);
+}
+
+.chart-line-one{
+    width:55px;
+    left:20px;
+    bottom:35px;
+    transform:rotate(-18deg);
+}
+
+.chart-line-two{
+    width:65px;
+    left:72px;
+    bottom:53px;
+    transform:rotate(25deg);
+}
+
+.chart-line-three{
+    width:65px;
+    left:130px;
+    bottom:80px;
+    transform:rotate(-28deg);
+}
+
+.chart-line-four{
+    width:70px;
+    left:187px;
+    bottom:47px;
+    transform:rotate(-8deg);
+}
+
+.chart-line-five{
+    width:65px;
+    left:250px;
+    bottom:38px;
+    transform:rotate(-25deg);
+}
+
+
+/* BARS */
+
+.home-chart-bars{
+    display:flex;
+    align-items:flex-end;
+    gap:12px;
+
+    height:35px;
+    margin-top:12px;
+}
+
+.home-chart-bars div{
+    width:35px;
+    border-radius:4px 4px 0 0;
+    background:#ff2b82;
+    opacity:.7;
+}
+
+.home-chart-bars div:nth-child(1){
+    height:15px;
+}
+
+.home-chart-bars div:nth-child(2){
+    height:22px;
+}
+
+.home-chart-bars div:nth-child(3){
+    height:18px;
+}
+
+.home-chart-bars div:nth-child(4){
+    height:28px;
+}
+
+.home-chart-bars div:nth-child(5){
+    height:32px;
+}
+
+
+/* BOTTOM */
+
+.home-bottom{
+    position:absolute;
+    bottom:25px;
+    left:35px;
+
+    display:flex;
+    gap:25px;
+
+    color:#555;
+    font-size:13px;
+}
+
+.home-bottom span:first-child{
+    color:#ff2b82;
+}
+
+
+/* RESPONSIVE */
+
+@media(max-width:850px){
+
+    .home-navbar{
+        padding:20px;
+    }
+
+    .home-content{
+        padding:40px 20px 80px;
+        flex-direction:column;
+        align-items:flex-start;
+        justify-content:center;
+        gap:50px;
+    }
+
+    .home-text{
+        width:100%;
+        max-width:600px;
+    }
+
+    .home-title{
+        font-size:46px;
+    }
+
+    .home-visual{
+        width:100%;
+        justify-content:center;
+    }
+
+    .home-chart-card{
+        width:100%;
+        max-width:390px;
+    }
+
+}
+
+
+@media(max-width:500px){
+
+    .home-navbar{
+        padding:18px 15px;
+    }
+
+    .home-logo{
+        font-size:21px;
+    }
+
+    .home-login-link{
+        display:none;
+    }
+
+    .home-signup-link{
+        padding:9px 14px;
+        font-size:13px;
+    }
+
+    .home-content{
+        padding:35px 15px 75px;
+    }
+
+    .home-label{
+        font-size:11px;
+        letter-spacing:2px;
+    }
+
+    .home-title{
+        font-size:38px;
+        letter-spacing:-1px;
+    }
+
+    .home-description{
+        font-size:15px;
+        line-height:1.6;
+    }
+
+    .home-buttons{
+        width:100%;
+    }
+
+    .home-primary-button,
+    .home-secondary-button{
+        flex:1;
+    }
+
+    .home-chart-card{
+        height:260px;
+        padding:20px;
+    }
+
+    .home-chart{
+        height:125px;
+    }
+
+    .home-bottom{
+        left:15px;
+        bottom:18px;
+    }
+
+}
