@@ -128,7 +128,7 @@
 
     padding:10px 12px;
 
-    color:#ff4c8a;
+    color:white;
     
     text-decoration:none;
 
@@ -143,7 +143,7 @@
 }
 
 .sidebar-link:hover{
-    color:white;
+    color: #ff2b82;
     background:#15151b;
 }
 
