@@ -38,7 +38,7 @@ return(
         <div className="sidebar-section-title">
             MAIN
         </div>
-
+<br></br>
 
         <Link
             className="sidebar-link "
@@ -48,7 +48,7 @@ return(
             <span>Home</span>
         </Link>
 
-
+<br></br>
         <Link
             className="sidebar-link "
             to="/monthly"
@@ -57,11 +57,11 @@ return(
             <span>Add Investment</span>
         </Link>
 
-
+<br></br>
         <div className="sidebar-section-title">
             ANALYSIS
         </div>
-
+<br></br>
 
         <Link
             className="sidebar-link"
@@ -71,7 +71,7 @@ return(
             <span>Monthly Analysis</span>
         </Link>
 
-
+<br></br>
         <Link
             className="sidebar-link "
             to="/allcharts"
@@ -80,7 +80,7 @@ return(
             <span>All Record Analysis</span>
         </Link>
 
-
+<br></br>
         <Link
             className="sidebar-link "
             to="/lists"
