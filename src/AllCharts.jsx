@@ -28,7 +28,7 @@ const[lists,setLists]=React.useState([])
 
 useEffect(function(){
 
-    fetch("http://localhost:5000/allCharts",{
+    fetch("https://investmate-fullstack.onrender.com/allCharts",{
 
         headers:{
             "authorization":"Bearer "+localStorage.getItem("token")

@@ -23,7 +23,7 @@ function FilteredData(){
 
 useEffect(function(){
 
-    fetch("http://localhost:5000/date",{headers:{
+    fetch("https://investmate-fullstack.onrender.com/date",{headers:{
             "authorization":"Bearer "+localStorage.getItem("token")
         }})
 

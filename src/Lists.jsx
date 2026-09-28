@@ -23,7 +23,7 @@ const navigate=useNavigate()
 
 function Delete(item){
 
-fetch("http://localhost:5000/delete/"+item._id,{
+fetch("https://investmate-fullstack.onrender.com/delete/"+item._id,{
     method:"DELETE",
     headers:{"authorization":"Bearer "+localStorage.getItem("token")}
 })
@@ -83,7 +83,7 @@ function Edit(item){
 
 function SaveEdit(){
 
-fetch("http://localhost:5000/edit/"+editItem._id,{
+fetch("https://investmate-fullstack.onrender.com/edit/"+editItem._id,{
 
     method:"PUT",
 
@@ -147,7 +147,7 @@ fetch("http://localhost:5000/edit/"+editItem._id,{
 
 useEffect(function(){
 
-    fetch("http://localhost:5000/lists",{
+    fetch("https://investmate-fullstack.onrender.com/lists",{
 
         headers:{
             "authorization":

@@ -72,7 +72,7 @@ return(
                 className="register-button"
                 onClick={function(){
 
-                    fetch("http://localhost:5000/register",{
+                    fetch("https://investmate-fullstack.onrender.com/register",{
                         method:"POST",
 
                         headers:{
