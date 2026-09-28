@@ -4,7 +4,7 @@ import cors from "cors"
 import mongoose from "mongoose"
 
 import jwt from "jsonwebtoken"
-import UsersModel from "./Users.js"
+import UsersModel from "./users.js"
 import verify from "./verify.js"
 
 import MonthlyModel from "./montly.js"
@@ -109,6 +109,6 @@ app.get("/allCharts",verify,function(req,res){
         console.log(data)
 res.json(data)})})
 
-app.listen(5000);
+app.listen(process.env.PORT||5000);
 
 
