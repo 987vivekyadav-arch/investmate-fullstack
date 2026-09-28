@@ -24,7 +24,7 @@ return(
         </span>
 
         <span className="sidebar-toggle">
-            {showSidebar ? "☰" : "☰"}
+            ☰
         </span>
 
     </button>
@@ -35,86 +35,85 @@ return(
     <div className="sidebar-links">
 
         <Link
-            className="sidebar-link sidebar-link-active" to="/">
-         <span className="sidebar-icon"></span><span>Home</span>
+            className="sidebar-link sidebar-link-active"
+            to="/"
+        >
+            <span className="sidebar-icon"></span>
+            <span>Home</span>
         </Link>
-
-   
-
- <br></br>
-
-<Link
-            className="sidebar-link sidebar-link-active" to="/monthly">
-         <span className="sidebar-icon"></span><span>Add Investment</span>
-        </Link>
-
-<br></br>
-
-
-
-
-
-
-
-<Link
-            className="sidebar-link sidebar-link-active" to="/date">
-         <span className="sidebar-icon"></span><span>Monthly Analysis</span>
-
-        </Link>
-
-
-<br></br>
-
-
-
-<Link
-            className="sidebar-link sidebar-link-active" to="/allcharts">
-         <span className="sidebar-icon"></span><span>All Record Analysis</span>
-        </Link>
-
-
-
 
         <br></br>
 
-<Link
-            className="sidebar-link sidebar-link-active" to="/lists">
-         <span className="sidebar-icon"></span><span>All Records History</span>
+        <Link
+            className="sidebar-link sidebar-link-active"
+            to="/monthly"
+        >
+            <span className="sidebar-icon"></span>
+            <span>Add Investment</span>
         </Link>
 
+        <br></br>
 
+        <Link
+            className="sidebar-link sidebar-link-active"
+            to="/date"
+        >
+            <span className="sidebar-icon"></span>
+            <span>Monthly Analysis</span>
+        </Link>
 
- <br></br>
+        <br></br>
 
+        <Link
+            className="sidebar-link sidebar-link-active"
+            to="/allcharts"
+        >
+            <span className="sidebar-icon"></span>
+            <span>All Record Analysis</span>
+        </Link>
 
-<button
-    className="sidebar-link sidebar-logout"
-    onClick={function(){
+        <br></br>
 
-        localStorage.removeItem("token")
-
-        window.location.href="/login"
-
-    }}
->
-    <span className="sidebar-icon">
-        ↪
-    </span>
-
-    <span>
-        Logout
-    </span>
-</button>
-
-
-
+        <Link
+            className="sidebar-link sidebar-link-active"
+            to="/lists"
+        >
+            <span className="sidebar-icon"></span>
+            <span>All Records History</span>
+        </Link>
 
     </div>
 
+    }
 
 
+    {showSidebar &&
+
+    <div className="sidebar-logout-section">
+
+        <button
+            className="sidebar-link sidebar-logout"
+            onClick={function(){
+
+                localStorage.removeItem("token")
+
+                window.location.href="/login"
+
+            }}
+        >
+            <span className="sidebar-icon">
+                ↪
+            </span>
+
+            <span>
+                Logout
+            </span>
+        </button>
+
+    </div>
 
     }
+
 
 </div>
 )
