@@ -11,14 +11,16 @@
 
     z-index:1000;
 
-    transition:width .25s ease;
-
     display:flex;
     flex-direction:column;
+
+    transition:width .25s ease;
 }
 
 
-/* CLOSED */
+/* ================================
+   CLOSED
+================================ */
 
 .sidebar-closed{
     width:30px;
@@ -29,14 +31,18 @@
 }
 
 
-/* OPEN */
+/* ================================
+   OPEN
+================================ */
 
 .sidebar-open{
     width:230px;
 }
 
 
-/* TOP BUTTON */
+/* ================================
+   TOP BUTTON
+================================ */
 
 .sidebar-button{
     width:100%;
@@ -78,15 +84,38 @@
     border-radius:8px;
 
     color:#aaa;
-    font-size:22px;
+    font-size:20px;
 }
 
 
-/* LINKS */
+/* ================================
+   LINKS AREA
+================================ */
 
 .sidebar-links{
     padding:12px 10px;
 }
+
+
+/* ================================
+   SECTION TITLE
+================================ */
+
+.sidebar-section-title{
+    font-size:11px;
+    font-weight:600;
+
+    color:#666;
+
+    letter-spacing:1px;
+
+    padding:12px 12px 6px;
+}
+
+
+/* ================================
+   LINKS
+================================ */
 
 .sidebar-link{
     width:100%;
@@ -107,6 +136,8 @@
     font-size:14px;
 
     transition:.2s;
+
+    border:none;
 }
 
 .sidebar-link:hover{
@@ -117,6 +148,7 @@
 .sidebar-link-active{
     color:white;
     background:rgba(255,43,130,.12);
+
     border-left:3px solid #ff2b82;
 }
 
@@ -127,64 +159,19 @@
     justify-content:center;
 
     font-size:18px;
+
     color:#ff2b82;
 }
 
 
-/* CLOSED STATE */
-
-.sidebar-closed .sidebar-button{
-    justify-content:center;
-    padding:0;
-}
-
-.sidebar-closed .sidebar-toggle{
-    position:absolute;
-    top:20px;
-    right:-44px;
-
-    width:44px;
-    height:56px;
-
-    background:#11131a;
-
-    border:2px solid #333641;
-    border-left:none;
-
-    border-radius:0 14px 14px 0;
-
-    color:white;
-    font-size:28px;
-    font-weight:bold;
-
-    box-shadow:0 4px 15px rgba(0,0,0,.4);
-}
-
-
 /* ================================
-   LOGOUT SECTION
+   LOGOUT
 ================================ */
 
 .sidebar-logout-section{
     margin-top:auto;
-
-    padding:0 10px 15px;
+    padding:10px;
 }
-
-.sidebar-section-title{
-    color:#666;
-
-    font-size:11px;
-    font-weight:600;
-
-    letter-spacing:1px;
-
-    margin-bottom:8px;
-    padding-left:4px;
-}
-
-
-/* LOGOUT */
 
 .sidebar-logout{
 
@@ -192,18 +179,9 @@
 
     box-sizing:border-box;
 
-    padding:12px 14px;
-
-    display:flex;
-    align-items:center;
-
-    gap:13px;
-
     border:1px solid transparent;
 
     border-left:5px solid #ee287b;
-
-    border-radius:7px;
 
     text-align:left;
 
@@ -211,13 +189,10 @@
 
     font-family:inherit;
 
-    font-size:14px;
-
     background:rgba(255,61,129,0.10);
 
     color:#fdf7f9;
 }
-
 
 .sidebar-logout:hover{
 
@@ -226,31 +201,48 @@
     border-color:rgba(255,61,129,0.25);
 
     color:#ff4c8a;
-
 }
-
 
 .sidebar-logout .sidebar-icon{
-
     color:inherit;
-
 }
 
 
-/* MOBILE */
+/* ================================
+   CLOSED STATE
+================================ */
+
+.sidebar-closed .sidebar-button{
+    justify-content:center;
+    padding:0;
+}
+
+.sidebar-closed .sidebar-toggle{
+    position:absolute;
+
+    top:20px;
+    right:-15px;
+
+    background:#08090c;
+}
+
+
+/* ================================
+   MOBILE
+================================ */
 
 @media(max-width:700px){
 
     .sidebar-logout{
-
-        justify-content:flex-start;
-
+        justify-content:center;
     }
 
 }
 
 
-/* MOBILE */
+/* ================================
+   SMALL MOBILE
+================================ */
 
 @media(max-width:600px){
 

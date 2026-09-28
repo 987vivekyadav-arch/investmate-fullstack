@@ -19,6 +19,7 @@ return(
 
         }}
     >
+
         <span className="sidebar-logo">
             Invest<span>Mate</span>
         </span>
@@ -34,6 +35,11 @@ return(
 
     <div className="sidebar-links">
 
+        <div className="sidebar-section-title">
+            MAIN
+        </div>
+
+
         <Link
             className="sidebar-link sidebar-link-active"
             to="/"
@@ -42,7 +48,6 @@ return(
             <span>Home</span>
         </Link>
 
-        <br></br>
 
         <Link
             className="sidebar-link sidebar-link-active"
@@ -52,7 +57,11 @@ return(
             <span>Add Investment</span>
         </Link>
 
-        <br></br>
+
+        <div className="sidebar-section-title">
+            ANALYSIS
+        </div>
+
 
         <Link
             className="sidebar-link sidebar-link-active"
@@ -62,7 +71,6 @@ return(
             <span>Monthly Analysis</span>
         </Link>
 
-        <br></br>
 
         <Link
             className="sidebar-link sidebar-link-active"
@@ -72,7 +80,6 @@ return(
             <span>All Record Analysis</span>
         </Link>
 
-        <br></br>
 
         <Link
             className="sidebar-link sidebar-link-active"
@@ -101,6 +108,7 @@ return(
 
             }}
         >
+
             <span className="sidebar-icon">
                 ↪
             </span>
@@ -108,12 +116,12 @@ return(
             <span>
                 Logout
             </span>
+
         </button>
 
     </div>
 
     }
-
 
 </div>
 )
