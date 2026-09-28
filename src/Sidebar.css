@@ -212,11 +212,11 @@
 @media(max-width:600px){
 
     .sidebar-open{
-        width:210px;
+        width:190px;
     }
 
     .sidebar-closed{
-        width:60px;
+        width:20px;
     }
 
     .sidebar-logo{
