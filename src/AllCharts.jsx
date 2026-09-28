@@ -49,14 +49,7 @@ useEffect(function(){
 },[])
 
 
-
-
-
-
-
 const navigate=useNavigate()
-
-
 
 
 /* TOTALS */
@@ -111,9 +104,70 @@ if(netInvested!==0){
 }
 
 
+/* COMBINE SAME NAMES */
+
+const combinedData=[]
+
+lists.forEach(function(item){
+
+    const existing=combinedData.find(function(clickItem){
+
+        return clickItem.name===item.name
+
+    })
+
+
+    if(existing){
+
+        existing.investedValue=
+        existing.investedValue+
+        Number(item.investedValue || 0)
+
+
+        existing.currentValue=
+        existing.currentValue+
+        Number(item.currentValue || 0)
+
+
+        existing.add=
+        existing.add+
+        Number(item.add || 0)
+
+
+        existing.withdraw=
+        existing.withdraw+
+        Number(item.withdraw || 0)
+
+
+    }
+    else{
+
+        combinedData.push({
+
+            name:item.name || "Investment",
+
+            investedValue:
+            Number(item.investedValue || 0),
+
+            currentValue:
+            Number(item.currentValue || 0),
+
+            add:
+            Number(item.add || 0),
+
+            withdraw:
+            Number(item.withdraw || 0)
+
+        })
+
+    }
+
+})
+
+
 /* LINE CHART */
 
-const lineData=lists.map(function(item,index){
+const lineData=combinedData.map(function(item,index){
 
     return{
 
@@ -128,7 +182,7 @@ const lineData=lists.map(function(item,index){
 
 /* BAR CHART */
 
-const barData=lists.map(function(item,index){
+const barData=combinedData.map(function(item,index){
 
     return{
 
@@ -145,7 +199,7 @@ const barData=lists.map(function(item,index){
 
 /* PIE CHART */
 
-const pieData=lists.map(function(item,index){
+const pieData=combinedData.map(function(item,index){
 
     return{
 
@@ -160,14 +214,19 @@ const pieData=lists.map(function(item,index){
 
 /* PROFIT CHART */
 
-const areaData=lists.map(function(item,index){
+const areaData=combinedData.map(function(item,index){
+
+    const netInvested=
+
+        Number(item.investedValue || 0)
+        +Number(item.add || 0)
+        -Number(item.withdraw || 0)
+
 
     const profit=
 
         Number(item.currentValue || 0)
-        -Number(item.investedValue || 0)
-        -Number(item.add || 0)
-        +Number(item.withdraw || 0)
+        -netInvested
 
 
     return{
@@ -283,6 +342,23 @@ return(
 
                 <div className="all-summary-label">
 
+                    Withdrawn Money
+
+                </div>
+
+                <div className="all-summary-value">
+
+                    ₹{totalWithdraw.toLocaleString("en-IN")}
+
+                </div>
+
+            </div>
+
+
+            <div className="all-summary-card">
+
+                <div className="all-summary-label">
+
                     Profit / Loss
 
                 </div>
@@ -318,6 +394,7 @@ return(
                 </div>
 
             </div>
+
 
         </div>
 
@@ -670,4 +747,4 @@ return(
 
 }
 
-export default AllCharts;
+export default AllCharts
