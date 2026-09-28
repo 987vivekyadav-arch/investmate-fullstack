@@ -41,7 +41,7 @@ return(
 
 
         <Link
-            className="sidebar-link sidebar-link-active"
+            className="sidebar-link "
             to="/"
         >
             <span className="sidebar-icon"></span>
@@ -50,7 +50,7 @@ return(
 
 
         <Link
-            className="sidebar-link sidebar-link-active"
+            className="sidebar-link "
             to="/monthly"
         >
             <span className="sidebar-icon"></span>
@@ -64,7 +64,7 @@ return(
 
 
         <Link
-            className="sidebar-link sidebar-link-active"
+            className="sidebar-link"
             to="/date"
         >
             <span className="sidebar-icon"></span>
@@ -73,7 +73,7 @@ return(
 
 
         <Link
-            className="sidebar-link sidebar-link-active"
+            className="sidebar-link "
             to="/allcharts"
         >
             <span className="sidebar-icon"></span>
@@ -82,7 +82,7 @@ return(
 
 
         <Link
-            className="sidebar-link sidebar-link-active"
+            className="sidebar-link "
             to="/lists"
         >
             <span className="sidebar-icon"></span>
