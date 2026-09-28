@@ -12,6 +12,9 @@
     z-index:1000;
 
     transition:width .25s ease;
+display: flex;
+flex-direction: column;
+
 }
 
 
@@ -103,6 +106,9 @@
     font-size:14px;
 
     transition:.2s;
+justify-content: flex-start;
+
+
 }
 
 .sidebar-link:hover{
@@ -152,7 +158,7 @@
 
     box-sizing:border-box;
 
-    margin-top: 60%;
+    margin-top: auto;
 
     border:1px solid transparent;
 

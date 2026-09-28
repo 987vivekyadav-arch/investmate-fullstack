@@ -123,7 +123,7 @@ return(
                                 </h2>
 
                                 <h2>
-                                    {item.month}
+                                    {item.month.split("T")[0]}
                                 </h2>
 
                                 <p>

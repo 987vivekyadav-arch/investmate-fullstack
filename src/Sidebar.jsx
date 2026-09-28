@@ -24,7 +24,7 @@ return(
         </span>
 
         <span className="sidebar-toggle">
-            {showSidebar ? "‹" : "›"}
+            {showSidebar ? "☰" : "☰"}
         </span>
 
     </button>
