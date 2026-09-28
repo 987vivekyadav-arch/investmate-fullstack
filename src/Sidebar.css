@@ -139,6 +139,7 @@
     transition:.2s;
 
     border:none;
+    background: rgba(255,43,130,.08);
 }
 
 .sidebar-link:hover{
